@@ -1,13 +1,17 @@
 import styled from 'styled-components/native';
-import { Theme } from '@/src/theme/theme';
+import { DefaultTheme } from 'styled-components';
 
-export const Container = styled.View`
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: ${ Theme.colors.purple_700 };
+interface SpinnerProps {
+  theme: DefaultTheme;
+}
+
+export const Container = styled.View<{ theme: DefaultTheme }>`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme } ) => theme.colors.purple_700};
 `;
 
-export const Spinner = styled.ActivityIndicator.attrs({
-  color: Theme.colors.yellow_700,
-})``;
+export const Spinner = styled.ActivityIndicator.attrs<SpinnerProps>(({ theme }) => ({
+  color: theme.colors.yellow_700,
+}))<SpinnerProps>``;

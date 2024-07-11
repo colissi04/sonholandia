@@ -1,4 +1,6 @@
-export const Theme = {
+import { DefaultTheme } from "styled-components/native";
+
+export const theme: DefaultTheme = {
     colors: {
         yellow_700: '#E29631',
         yellow_400: '#FFBA64',
@@ -24,6 +26,6 @@ export const Theme = {
         sm: 14,
         md: 16,
         lg: 18,
-        xl: 20,
+        xl: 32,
     }
 };

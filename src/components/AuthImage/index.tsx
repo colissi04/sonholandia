@@ -1,3 +1,4 @@
+import React from 'react';
 import { ReactNode } from 'react';
 import { ImageSourcePropType } from 'react-native';
 import { AuthImageBackground } from './styles';
