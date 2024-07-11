@@ -8,6 +8,7 @@ export function Login(){
   return(
     <SafeAreaView style={{flex: 1}}>
       <AuthImage source={loginImageBackground}>
+
         <Text style={{color: 'red'}}>
           ola mundo
         </Text>
@@ -17,6 +18,7 @@ export function Login(){
         <Text style={{color: 'red'}}>
           ola mundo
         </Text>
+        
       </AuthImage>
     </SafeAreaView>
   )
