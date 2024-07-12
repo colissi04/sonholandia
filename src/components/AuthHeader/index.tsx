@@ -5,11 +5,11 @@ export function AuthHeader(){
   return(
     <AuthHeaderView>
       <PrimaryText>
-        Entre com sua conta
+        Login
       </PrimaryText>
       
       <SecondaryText>
-        Crie histórias incríveis para sonhos mágicos.
+        Crie histórias incríveis para sonhos {'\n'} mágicos.
       </SecondaryText>
     </AuthHeaderView>
   )
