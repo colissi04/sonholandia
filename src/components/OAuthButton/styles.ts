@@ -2,7 +2,9 @@ import styled, {css, DefaultTheme} from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export const OAuthButtonContainer = styled(TouchableOpacity)`
+export const OAuthButtonContainer = styled(TouchableOpacity).attrs({
+  activeOpacity: 0.4
+})`
   ${({ theme }: {theme:DefaultTheme}) => css`
     background-color: ${theme.colors.gray_100};
     height: 50px;

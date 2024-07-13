@@ -1,7 +1,9 @@
 import styled, {css, DefaultTheme} from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 
-export const AuthButtonContainer = styled(TouchableOpacity)`
+export const AuthButtonContainer = styled(TouchableOpacity).attrs({
+  activeOpacity: 0.4
+})`
   ${({ theme }: {theme:DefaultTheme}) => css`
     background-color: ${theme.colors.yellow_700};
     width: 100%;

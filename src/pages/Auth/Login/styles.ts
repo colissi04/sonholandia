@@ -8,7 +8,9 @@ export const Container = styled.View`
   padding: 40px;
 `;
 
-export const ForgotPasswordContainer = styled(TouchableOpacity)`
+export const ForgotPasswordContainer = styled(TouchableOpacity).attrs({
+  activeOpacity: 0.4
+})`
   margin-top: 2px;
   margin-bottom: 28px;
 `;
@@ -21,7 +23,9 @@ export const ForgotPasswordText = styled.Text`
   `}
 `;
 
-export const CreateAccountContainer = styled(TouchableOpacity)`
+export const CreateAccountContainer = styled(TouchableOpacity).attrs({
+  activeOpacity: 0.4
+})`
   flex-direction: row;
   align-items: center;
   gap: 4px;
