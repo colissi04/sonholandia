@@ -10,7 +10,7 @@ type AuthImageProps = {
 
 export const AuthImage = ({source, children}: AuthImageProps) => {
   return(
-    <AuthImageBackground source={source}>
+    <AuthImageBackground source={source} >
       {children}
     </AuthImageBackground>
   )
