@@ -1,15 +1,20 @@
 import React from 'react';
 import { AuthHeaderView, PrimaryText, SecondaryText} from './styles';
 
-export function AuthHeader(){
+type AuthHeaderProps = {
+  title: string;
+  subtitle: string;
+}
+
+export function AuthHeader({ title, subtitle }: AuthHeaderProps){
   return(
     <AuthHeaderView>
       <PrimaryText>
-        Login
+        {title}
       </PrimaryText>
       
       <SecondaryText>
-        Crie histórias incríveis para sonhos {'\n'} mágicos.
+        {subtitle}
       </SecondaryText>
     </AuthHeaderView>
   )

@@ -12,7 +12,6 @@ export const ForgotPasswordContainer = styled(TouchableOpacity).attrs({
   activeOpacity: 0.4
 })`
   margin-top: 2px;
-  margin-bottom: 28px;
 `;
 
 export const ForgotPasswordText = styled.Text`
@@ -29,7 +28,6 @@ export const CreateAccountContainer = styled(TouchableOpacity).attrs({
   flex-direction: row;
   align-items: center;
   gap: 4px;
-  margin-bottom: 20px;
 `;
 
 export const DoNotHaveAccount = styled.Text`

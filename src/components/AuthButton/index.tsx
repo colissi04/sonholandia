@@ -1,10 +1,14 @@
 import React from "react";
 import { AuthButtonContainer, AuthButtonText } from './styles';
 
-export function AuthButton(){
+type AuthButtonProps = {
+  btnText: string;
+}
+
+export function AuthButton({ btnText }: AuthButtonProps){
   return(
     <AuthButtonContainer>
-      <AuthButtonText>Login</AuthButtonText>
+      <AuthButtonText>{btnText}</AuthButtonText>
     </AuthButtonContainer>
   )
 }

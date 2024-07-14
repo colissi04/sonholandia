@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { ThemeProvider } from 'styled-components/native';
 import { theme } from '@/src/theme/theme';
 
-import { StatusBar } from 'react-native';
+import { StatusBar, StatusBarStyle } from 'expo-status-bar';
 
 import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, Poppins_700Bold } from '@expo-google-fonts/poppins';
 
-import { Login } from '@/src/pages/Auth/Login';
+import { SignIn } from '@/src/pages/Auth/SignIn';
+import { SignUp } from '@/src/pages/Auth/SignUp';
 import { Loading } from '@/src/components/Loading';
 
 export default function Index() {
+  const [ statusBarStyle, setStatusBarStyle ] = useState<StatusBarStyle>('light');
+
   const [ fontsLoaded ] = useFonts({
     Poppins_400Regular,
     Poppins_500Medium,
@@ -21,12 +24,12 @@ export default function Index() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar
-        barStyle={'light-content'}
+        style={statusBarStyle}
         translucent
-        backgroundColor='#141135'
+        backgroundColor={'#141135'}
       />
 
-      { fontsLoaded ? <Login /> : <Loading /> }
+      { fontsLoaded ? <SignUp /> : <Loading /> }
     </ThemeProvider>
   );
 }

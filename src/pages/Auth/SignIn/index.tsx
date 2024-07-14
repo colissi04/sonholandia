@@ -21,14 +21,14 @@ import { AuthInput } from "@/src/components/AuthInput";
 import { AuthButton } from "@/src/components/AuthButton";
 import { OAuthButon } from "@/src/components/OAuthButton";
 
-export function Login(){
+export function SignIn(){
 
   return(
     <SafeAreaView style={{flex: 1}}>
       <AuthImage source={loginImageBackground}>
 
         <Container>
-          <AuthHeader />
+          <AuthHeader title="Login" subtitle="Crie histórias incríveis para sonhos       mágicos." />
           <AuthInput placeholder="Email" />
           <AuthInput placeholder="Senha" haveIcon/>
 
@@ -36,7 +36,7 @@ export function Login(){
             <ForgotPasswordText>Esqueceu sua senha?</ForgotPasswordText>
           </ForgotPasswordContainer>
 
-          <AuthButton />
+          <AuthButton btnText="Login"/>
 
           <CreateAccountContainer>
             <DoNotHaveAccount>Não possui uma conta?</DoNotHaveAccount>

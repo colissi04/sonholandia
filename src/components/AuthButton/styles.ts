@@ -12,6 +12,7 @@ export const AuthButtonContainer = styled(TouchableOpacity).attrs({
     justify-content: center;
     align-items: center;
     margin-bottom: 14px;
+    margin-top: 20px;
   `}
 `;
 
