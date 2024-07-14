@@ -10,6 +10,7 @@ import { useFonts, Poppins_400Regular, Poppins_500Medium, Poppins_600SemiBold, P
 import { SignIn } from '@/src/pages/Auth/SignIn';
 import { SignUp } from '@/src/pages/Auth/SignUp';
 import { Home } from '@/src/pages/App/Home';
+import { CreateStory } from '@/src/pages/App/CreateStory';
 
 
 import { Loading } from '@/src/components/Loading';
@@ -32,7 +33,7 @@ export default function Index() {
         backgroundColor={'#141135'}
       />
 
-      { fontsLoaded ? <Home /> : <Loading /> }
+      { fontsLoaded ? <CreateStory /> : <Loading /> }
     </ThemeProvider>
   );
 }

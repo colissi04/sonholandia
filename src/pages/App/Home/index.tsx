@@ -16,11 +16,12 @@ import {
 } from './styles';
 
 import dreamland from '../../../assets/dreamland.png';
+import { AppBackground } from "@/src/components/AppBackground";
 
 export function Home(){
   return(
     <SafeAreaView style={{ flex:1 }}>
-      <HomeContainer colors={['#141135','#372DA7']} start={{ x: 0, y: 0 }} end={{ x: 0, y: 1 }}>
+      <AppBackground style={{ justifyContent: "center", alignItems: "center"}} colors={['#141135','#372DA7']} start={{ x: 0, y: 0 }} end={{ x: 0, y: 1 }}>
         <Image source={dreamland}/>
 
         <TextContainer>
@@ -42,7 +43,7 @@ export function Home(){
           <CookiesIcon name="cookie-bite" size={24} color={'#FFFFFF'} />
         </Cookies>
         
-      </HomeContainer>
+      </AppBackground>
     </SafeAreaView>
   )
 }
